@@ -5,7 +5,7 @@
 # npm start
 ```
 
-** 暴露配置文件 **
+##### 暴露配置文件
 ```
 # npm run eject
 ```
@@ -121,3 +121,6 @@ test: /\.css$/ 的 use 数组配置增加 less-loader
   ],
 },
 ```
+
+### react-router v4 使用 history 控制路由跳转
+[react-router v4 使用 history 控制路由跳转](https://segmentfault.com/a/1190000011137828)
