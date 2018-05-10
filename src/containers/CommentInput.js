@@ -4,6 +4,10 @@ import { connect } from 'react-redux'
 import CommentInput from '../components/CommentInput'
 import { addComment } from '../reducers/comments'
 
+
+
+
+
 class CommentInputContainer extends Component {  
   static propTypes = {
     comments: PropTypes.array,

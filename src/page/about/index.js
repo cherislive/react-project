@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-class NotFound extends Component {
+class About extends Component {
   render() {
     return (
       <div>
         <div className="wrapper mod-components">
-          <div className="container mod-components mod-panel tc">
-            NotFound
+          <div className="container mod-components mod-panel">
+            ABOUT
           </div>
         </div>
       </div>
@@ -13,4 +13,4 @@ class NotFound extends Component {
   }
 }
 
-export default NotFound;
+export default About;

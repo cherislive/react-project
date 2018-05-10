@@ -3,7 +3,8 @@ class CategoryList extends Component {
   render() {
     return (
       <div>
-        {this.props.match.params.type}
+        <h3>动态路由：</h3>        
+        <p>{this.props.match.params.name}</p>
       </div>
     );
   }

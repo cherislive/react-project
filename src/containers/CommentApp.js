@@ -6,7 +6,7 @@ import '../assets/css/Comment.css';
 class CommentApp extends Component {  
   render () {
     return (
-      <div className='mod-container'>
+      <div>
         <CommentInput />
         <CommentList />
       </div>
