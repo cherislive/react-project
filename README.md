@@ -45,7 +45,7 @@ const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 8204;
 - [ ] Store -- 待完善
 
 
-* 相关文件配置：
+### 项目文件配置：
 位置：`config/paths.js`
 
 
