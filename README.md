@@ -1,7 +1,7 @@
 ### 项目运行（nodejs 6.0+）
 由于涉及大量的 ES6/7 等新属性，建议node版本 6.0以上
 ```
-git clone http://...
+git clone https://github.com/cherislive/react-project.git
 cd redux-project
 npm install
 npm start
