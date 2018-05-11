@@ -42,6 +42,7 @@ const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 8204;
 - [x] 保护式路由 -- 完成
 - [x] 异步请求封装 -- 完成
 - [x] 组件卸载后 xhr abort -- 完成
+- [x] Dialog -- 完成
 - [ ] Store -- 待完善
 
 
