@@ -23,7 +23,7 @@ class Comment extends Component {
   // 计算时间
   _updateTimeString () {
     const comment = this.props.item
-    const duration = (+Date.now() - comment.createdTime) / 1000
+    const duration = (+new Date() - comment.createdTime) / 1000
     let _timeString
     if (duration < 60) {
       _timeString = `${Math.round(Math.max(duration, 1))} 秒前`

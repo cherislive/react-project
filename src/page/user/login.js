@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Redirect, withRouter, NavLink as Link } from 'react-router-dom';
-import { sessionStorage } from '@/utils/utils';
+import { sessionStorage } from '@/utils';
 import API from '@/api';
 /* A fake authentication function */
 // export const fakeAuth = {

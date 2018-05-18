@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import PropTypes from 'prop-types';
+import Debug from '@/utils/debug';
+const debug = new Debug('Loading');
 // import axios from 'axios';
 // const CancelToken = axios.CancelToken;
 // const SOURCE = CancelToken.source();
@@ -12,12 +14,12 @@ class Loading extends Component {
   }
   constructor(props) {
     super()
-    console.log('Loading ...', props)
+    debug('props', props)
   }
   componentWillMount(props) {
   }
   componentWillReceiveProps(nextProps) {
-    console.log('nextProps', nextProps)
+    debug('nextProps', nextProps)
   }
   render() {
     return (

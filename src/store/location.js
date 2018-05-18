@@ -1,3 +1,12 @@
+import createHistory from 'history/createBrowserHistory';
+export const history = createHistory();
+// Get the current location.
+const initialState = history.location;
+
+export const updateLocation = ({ dispatch }) => {
+  return (nextLocation) => dispatch(locationChange(nextLocation))
+}
+
 // action types
 const INIT_COMMENTS = 'INIT_COMMENTS'
 const ADD_COMMENT = 'ADD_COMMENT'

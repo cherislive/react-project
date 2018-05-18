@@ -1,3 +1,5 @@
+### BASE
+本项目使用 'create-react-app' 创建，由于脚手架初始的应用技术架构并不能完全满足我们的业务需求，需要我们自己修改，完善。
 ### 项目运行（nodejs 6.0+）
 由于涉及大量的 ES6/7 等新属性，建议node版本 6.0以上
 ```
@@ -13,7 +15,12 @@ npm run build
 ```
 
 ### 技术栈
-react + redux + react-router + webpack + ES6/7
+react + react-dom + react-router + redux + webpack + ES6/7
+react，react-dom；项目前提；
+react-router管理应用路由；
+redux作为JavaScript状态容器，react-redux将React应用与redux连接；
+Immutable.js支持Immutable化状态，redux-immutable使整个redux store状态树Immutable化；
+
 
 ### 其他
 
@@ -37,18 +44,28 @@ const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 8204;
 ```
 
 ### 目标功能
+- [x] DEBUG UI组件 -- 完成
 - [x] 路由RR4 -- 完成
 - [x] 路由嵌套 -- 完成
 - [x] 保护式路由 -- 完成
 - [x] 异步请求封装 -- 完成
 - [x] 组件卸载后 xhr abort -- 完成
-- [x] Dialog -- 完成
+- [x] Dialog 组件 -- 完成
 - [ ] Store -- 待完善
 
 
 ### 项目文件配置：
 位置：`config/paths.js`
 
+
+### 开发调试工具
+`redux-devtools`是一款支持热重载，回放action，自定义UI的一款Redux开发工具。
+步骤：
+1、安装浏览器插件
+2、在Redux应用中添加相关配置
+```
+npm install redux-devtools --save-dev
+```
 
 ### user '@' resolve file
 修改文件：

@@ -189,8 +189,6 @@ module.exports = {
                         importLoaders: 1,
                         minimize: true,
                         sourceMap: shouldUseSourceMap,
-                        modules: true,  // 开启css-modules模式, 默认值为flase
-                        localIdentName: '[name]-[local]-[hash:base64:8]',//css-modules模式下local类名的命名
                       },
                     },
                     {

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import { BrowserRouter, Switch, Route, NavLink as Link } from 'react-router-dom';
 import { Switch, Route, NavLink as Link, Redirect } from 'react-router-dom';
 import CategoryList from './CategoryList';
-import Comment from '@/containers/CommentApp';
+import Comment from '@/containers/comment/CommentApp';
 class Category extends Component {
   render() {
     const _MATCH = this.props.match

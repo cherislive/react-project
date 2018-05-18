@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Redirect } from 'react-router-dom';
-import { sessionStorage } from '@/utils/utils';
+import { sessionStorage } from '@/utils';
 // 登录验证
 const requireAuth = (Layout, props) => {
   const authLoggedUser = sessionStorage('authLoggedUser')

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-import { baseName } from '@/envconfig'
+import { baseName } from '@/config'
 import requireAuth from './auth';
 import Loadable from 'react-loadable';
 import Loading from '@/components/common/loading';
@@ -28,15 +28,18 @@ const Login = Loadable({
 class RouteMap extends Component {
   render () {
     return (
-      <Router basename={baseName}>
-        <Switch>
-          <Route path="/help" component={Help} />
-          <Route path="/login" component={Login} />
-          <Route path='/error' component={NotFound} />
-          <Route path='/' component={props => requireAuth(App, props)} />
-          <Redirect path="*" to="/" />
-        </Switch>
-      </Router>
+      <div>
+        <div className="tc" />
+        <Router basename={baseName}>
+          <Switch>
+            <Route path="/help" component={Help} />
+            <Route path="/login" component={Login} />
+            <Route path='/error' component={NotFound} />
+            <Route path='/' component={props => requireAuth(App, props)} />
+            <Redirect path="*" to="/" />
+          </Switch>
+        </Router>
+      </div>
     )
   }
 }

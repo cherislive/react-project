@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import CommentInput from '../components/CommentInput'
-import { addComment } from '../reducers/comments'
+import CommentInput from '@/components/comment/CommentInput'
+import { addComment } from '@/store/reducers/comments'
 
 
 
@@ -45,7 +45,8 @@ class CommentInputContainer extends Component {
     if (!comment.content) return alert('请输入评论内容')
     // 新增评论保存到 LocalStorage 中
     const { comments } = this.props
-    const newComments = [...comments, comment]
+    let newComments = [...comments];
+    newComments.unshift(comment);
     localStorage.setItem('comments', JSON.stringify(newComments))
     // this.props.onSubmit 是 connect 传进来的
     // 会 dispatch 一个 action 去新增评论

@@ -169,8 +169,6 @@ module.exports = {
                 loader: require.resolve('css-loader'),
                 options: {
                   importLoaders: 1,
-                  modules: true,  // 开启css-modules模式, 默认值为flase
-                  localIdentName: '[name]-[local]-[hash:base64:8]',//css-modules模式下local类名的命名
                 },
               },
               {

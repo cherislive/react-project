@@ -1,8 +1,8 @@
 import axios from 'axios';
 import promise from 'es6-promise';
 import Qs from 'qs';
-import { baseURL } from '@/envconfig';
-import { removeLocalStorage } from './utils';
+import { baseURL } from '@/config';
+import { removeLocalStorage } from '@/utils';
 promise.polyfill();
 axios.defaults.timeout = 12000;
 const CancelToken = axios.CancelToken;
