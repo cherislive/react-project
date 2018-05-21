@@ -5,6 +5,10 @@ class HomeItem extends Component {
       <div>
         <h3>嵌套路由：</h3>
         <p>{this.props.match.params.name || 'NONE'}</p>
+        <div className="mod-components">
+          <button className="ui-btn">INCREMENT</button>
+          <button className="ui-btn">DECREMENT</button>
+        </div>
       </div>
     );
   }

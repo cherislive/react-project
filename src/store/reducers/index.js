@@ -1,10 +1,8 @@
 import { combineReducers } from 'redux';
+import todoApp from './todos';
 import comments from './comments';
-import todos from './todos/todos';
-import visibilityFilter from './todos/visibilityFilter';
 
 export default combineReducers({
-  todos,
-  visibilityFilter,
+  todoApp,
   comments
 })

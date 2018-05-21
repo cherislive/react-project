@@ -24,6 +24,8 @@ if (process.env.NODE_ENV === 'development') {
   }
 }
 
+// 创建 Redux store 来存放应用的状态。
+// API 是 { subscribe, dispatch, getState }。
 const store = createStore(
   rootReducer,
   // 组合redux中间价和加强器，强化redux
@@ -35,10 +37,11 @@ const store = createStore(
 )
 // Dispatch from anywhere like normal.
 // store.dispatch(push('/foo'))
-// 监听state变化
+// 监听state变化  可以手动订阅更新，也可以事件绑定到视图层。
 store.subscribe(() => {
-  debug('store发生了变化');
+  debug('store发生了变化', store.getState());
 });
+
 export default store;
 
 
