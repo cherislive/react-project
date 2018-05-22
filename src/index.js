@@ -10,12 +10,6 @@ import registerServiceWorker from '@/registerServiceWorker';
 import '@/assets/css/base.css';
 import '@/assets/css/common.css';
 import '@/mock'  // 模拟数据 开发阶段使用
-import {
-  addTodo,
-  toggleTodo,
-  setVisibilityFilter,
-  VisibilityFilters
-} from '@/store/reducers/todos/actions';
 
 import Debug from '@/utils/debug';
 const debug = new Debug('Root');
@@ -29,6 +23,12 @@ const render = Component => {
   );
 }
 render(RouterMap);
+// import {
+//   addTodo,
+//   toggleTodo,
+//   setVisibilityFilter,
+//   VisibilityFilters
+// } from '@/store/reducers/todos/actions';
 // store.dispatch(addTodo('Learn about actions'))
 // store.dispatch(addTodo('Learn about reducers'))
 // store.dispatch(addTodo('Learn about store'))
